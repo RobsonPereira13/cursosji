@@ -12,8 +12,6 @@ import com.robsondev.cursosji.domain.Cidade;
 import com.robsondev.cursosji.domain.Estado;
 import com.robsondev.cursosji.domain.Produto;
 import com.robsondev.cursosji.repositories.CategoriaRepository;
-import com.robsondev.cursosji.repositories.CidadeRepository;
-import com.robsondev.cursosji.repositories.EstadoRepository;
 import com.robsondev.cursosji.repositories.ProdutoRepository;
 
 @SpringBootApplication
@@ -24,10 +22,6 @@ public class CursosjiApplication implements CommandLineRunner {
 	
 	@Autowired
 	private ProdutoRepository repo1;
-	@Autowired
-	private EstadoRepository repo2;
-	@Autowired
-	private CidadeRepository repo3;
 	
 	public static void main(String[] args) {
 		SpringApplication.run(CursosjiApplication.class, args);
@@ -61,8 +55,6 @@ public class CursosjiApplication implements CommandLineRunner {
 		
 		repo.saveAll(Arrays.asList(cat1,cat2));
 		repo1.saveAll(Arrays.asList(p1,p2,p3));
-		repo2.saveAll(Arrays.asList(estado1,estado2));
-		repo3.saveAll(Arrays.asList(c1,c2,c3));
 	}
 
 }
