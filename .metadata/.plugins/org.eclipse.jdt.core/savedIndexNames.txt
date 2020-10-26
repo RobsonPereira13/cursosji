@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+C:\Users\robso\Documents\workspace-spring-tool-suite-4-4.8.0.RELEASE\.metadata\.plugins\org.eclipse.jdt.core
+4098728768.index
