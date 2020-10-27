@@ -80,7 +80,6 @@ INDEX VERSION 1.131+C:\Users\robso\Documents\workspace-spring-tool-suite-4-4.8.0
 4183039113.index
 2035309697.index
 3854766291.index
-4098728768.index
 762051811.index
 226361428.index
 1215817885.index

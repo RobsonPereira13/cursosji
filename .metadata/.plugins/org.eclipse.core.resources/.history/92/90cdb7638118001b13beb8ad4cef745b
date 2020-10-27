@@ -14,7 +14,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.robsondev.cursosji.domain.enums.TipoCliente;
 @Entity
 public class Cliente  implements Serializable {
@@ -27,7 +26,6 @@ public class Cliente  implements Serializable {
 	private Integer id;
 	private String nome,email,cpfOuCnpj;
 	private Integer tipo;
-	@JsonManagedReference
 	@OneToMany(mappedBy = "cliente")
 	private List<Endereco> enderecos = new ArrayList<>();
 	
