@@ -19,6 +19,8 @@ import com.robsondev.cursosji.repositories.CidadeRepository;
 import com.robsondev.cursosji.repositories.ClienteRepository;
 import com.robsondev.cursosji.repositories.EnderecoRepository;
 import com.robsondev.cursosji.repositories.EstadoRepository;
+import com.robsondev.cursosji.repositories.PagamentoRepository;
+import com.robsondev.cursosji.repositories.PedidoRepository;
 import com.robsondev.cursosji.repositories.ProdutoRepository;
 
 @SpringBootApplication
@@ -37,6 +39,10 @@ public class CursosjiApplication implements CommandLineRunner {
 	private ClienteRepository repo4;
 	@Autowired
 	private EnderecoRepository repo5;
+	@Autowired
+	private PedidoRepository repo6;
+	@Autowired
+	private PagamentoRepository repo7;
 	
 	public static void main(String[] args) {
 		SpringApplication.run(CursosjiApplication.class, args);
@@ -78,6 +84,8 @@ public class CursosjiApplication implements CommandLineRunner {
 		estado2.getCidades().addAll(Arrays.asList(c3));
 		
 		cli1.getEnderecos().addAll(Arrays.asList(end1,end2));
+	
+		 
 		
 		repo.saveAll(Arrays.asList(cat1,cat2));
 		repo1.saveAll(Arrays.asList(p1,p2,p3));

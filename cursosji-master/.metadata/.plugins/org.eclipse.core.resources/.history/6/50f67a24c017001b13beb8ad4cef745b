@@ -1,0 +1,5 @@
+package com.robsondev.cursosji.domain;
+
+public class Produto {
+
+}
