@@ -13,6 +13,7 @@ import javax.persistence.MapsId;
 import javax.persistence.OneToOne;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.robsondev.cursosji.domain.enums.EstadoPagamento;
 @Entity
 //definindo herança para as classes com cartão e com boleto e gerando tabelas
@@ -27,7 +28,7 @@ public class Pagamento implements Serializable {
 	private Integer estado;
 	// garantindo que o id  pagamento será o mesmo do pedido correspondente a ele
 	@OneToOne
-	@JsonBackReference
+	@JsonIgnore
 	@JoinColumn(name="pedido_id")
 	@MapsId
 	private Pedido pedido;
